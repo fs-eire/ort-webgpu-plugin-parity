@@ -1,0 +1,9 @@
+[submodule "external/onnxruntime"]
+	path = external/onnxruntime
+	url = https://github.com/fs-eire/onnxruntime.git
+	branch = ep-api
+
+[submodule "external/onnxruntime-genai"]
+	path = external/onnxruntime-genai
+	url = https://github.com/fs-eire/onnxruntime-genai.git
+	branch = ep-api-parity
