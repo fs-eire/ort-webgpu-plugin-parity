@@ -79,7 +79,7 @@ copy /Y "%~dp0\ort_shared\RelWithDebInfo\RelWithDebInfo\dxcompiler.dll" "%~dp0\p
 
 copy /Y "%~dp0\ort_genai_plugin\RelWithDebInfo\benchmark\c\RelWithDebInfo\model_benchmark.exe" "%~dp0\parity_plugin\model_benchmark.exe"
 copy /Y "%~dp0\ort_genai_plugin\RelWithDebInfo\benchmark\c\RelWithDebInfo\model_benchmark.pdb" "%~dp0\parity_plugin\model_benchmark.pdb"
-copy /Y "%~dp0\ort_genai_plugin\RelWithDebInfo\RelWithDebInfo\onnxruntime_genai.dll" "%~dp0\parity_plugin\onnxruntime_genai.dll"
-copy /Y "%~dp0\ort_genai_plugin\RelWithDebInfo\RelWithDebInfo\onnxruntime_genai.pdb" "%~dp0\parity_plugin\onnxruntime_genai.pdb"
+copy /Y "%~dp0\ort_genai_plugin\RelWithDebInfo\RelWithDebInfo\onnxruntime-genai.dll" "%~dp0\parity_plugin\onnxruntime-genai.dll"
+copy /Y "%~dp0\ort_genai_plugin\RelWithDebInfo\RelWithDebInfo\onnxruntime-genai.pdb" "%~dp0\parity_plugin\onnxruntime-genai.pdb"
 
 endlocal

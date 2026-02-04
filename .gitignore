@@ -33,3 +33,10 @@ ort_generic/
 ort_shared/
 ort_genai_base/
 ort_genai_plugin/
+
+# Parity working directories
+parity_base/
+parity_plugin/
+
+# Models
+models/
