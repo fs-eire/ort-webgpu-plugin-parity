@@ -22,3 +22,14 @@ Thumbs.db
 # Temporary files
 *.tmp
 *.temp
+
+# ORT home
+ort_home_base/
+ort_home_plugin/
+
+# Build directories
+ort_base/
+ort_generic/
+ort_shared/
+ort_genai_base/
+ort_genai_plugin/
