@@ -55,7 +55,8 @@ call build.bat ^
     --skip_tests ^
     --skip_wheel ^
     --skip_examples ^
-    --ort_home "%~dp0\ort_home_plugin"
+    --ort_home "%~dp0\ort_home_plugin" ^
+    --cmake_extra_defines "ORT_GENAI_USE_WEBGPU_PLUGIN=ON"
 
 if %errorlevel% neq 0 (
     echo Build failed with error %errorlevel%

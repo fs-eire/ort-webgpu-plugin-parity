@@ -52,7 +52,7 @@ cp -f "$SCRIPT_DIR/ort_base/RelWithDebInfo/libonnxruntime."* "$SCRIPT_DIR/ort_ho
 cp -f "$SCRIPT_DIR/ort_base/RelWithDebInfo/onnxruntime."* "$SCRIPT_DIR/ort_home_base/lib/" 2>/dev/null || true
 
 echo "=== STEP 3: Build onnxruntime-genai (base) ==="
-cd "$SCRIPT_DIR/external/onnxruntime-genai_base"
+cd "$SCRIPT_DIR/external/onnxruntime-genai"
 ./build.sh \
     --parallel \
     --config RelWithDebInfo \

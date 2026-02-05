@@ -77,7 +77,8 @@ cd "$SCRIPT_DIR/external/onnxruntime-genai"
     --skip_tests \
     --skip_wheel \
     --skip_examples \
-    --ort_home "$SCRIPT_DIR/ort_home_plugin"
+    --ort_home "$SCRIPT_DIR/ort_home_plugin" \
+    --cmake_extra_defines "ORT_GENAI_USE_WEBGPU_PLUGIN=ON"
 
 if [ $? -ne 0 ]; then
     echo "Build failed with error $?"

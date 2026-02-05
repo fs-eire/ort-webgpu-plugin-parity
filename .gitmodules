@@ -7,8 +7,3 @@
 	path = external/onnxruntime-genai
 	url = https://github.com/fs-eire/onnxruntime-genai.git
 	branch = ep-api-parity
-
-[submodule "external/onnxruntime-genai_base"]
-	path = external/onnxruntime-genai_base
-	url = https://github.com/fs-eire/onnxruntime-genai.git
-	branch = ep-api-parity-base

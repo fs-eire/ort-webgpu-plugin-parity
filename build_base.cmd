@@ -35,7 +35,7 @@ if not exist "%~dp0\ort_home_base\lib" mkdir "%~dp0\ort_home_base\lib"
 copy /Y "%~dp0\ort_base\RelWithDebInfo\RelWithDebInfo\onnxruntime.*" "%~dp0\ort_home_base\lib\"
 
 :: STEP.3 - build onnxruntime-genai
-pushd %~dp0\external\onnxruntime-genai_base
+pushd %~dp0\external\onnxruntime-genai
 call build.bat ^
     --parallel ^
     --config RelWithDebInfo ^
