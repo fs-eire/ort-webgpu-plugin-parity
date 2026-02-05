@@ -23,6 +23,9 @@ Thumbs.db
 *.tmp
 *.temp
 
+# venv
+.build-env/
+
 # ORT home
 ort_home_base/
 ort_home_plugin/
