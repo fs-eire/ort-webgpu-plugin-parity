@@ -14,7 +14,6 @@ pushd %~dp0\external\onnxruntime
 call build.bat ^
     --parallel ^
     --config RelWithDebInfo ^
-    --use_webgpu ^
     --build_dir %~dp0\ort_generic ^
     --enable_generic_interface ^
     --skip_tests ^

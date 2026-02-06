@@ -40,6 +40,7 @@ cd "$SCRIPT_DIR/external/onnxruntime"
     --build_shared_lib \
     --target onnxruntime \
     --disable_rtti \
+    --use_binskim_compliant_compile_flags \
     --enable_lto
 
 if [ $? -ne 0 ]; then

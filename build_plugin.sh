@@ -34,13 +34,13 @@ cd "$SCRIPT_DIR/external/onnxruntime"
 ./build.sh \
     --parallel \
     --config RelWithDebInfo \
-    --use_webgpu \
     --build_dir "$SCRIPT_DIR/ort_generic" \
     --enable_generic_interface \
     --skip_tests \
     --build_shared_lib \
     --target onnxruntime \
     --disable_rtti \
+    --use_binskim_compliant_compile_flags \
     --enable_lto
 
 if [ $? -ne 0 ]; then
@@ -57,6 +57,7 @@ echo "=== STEP 1b: Build onnxruntime WebGPU provider shared library ==="
     --skip_tests \
     --target onnxruntime_providers_webgpu \
     --disable_rtti \
+    --use_binskim_compliant_compile_flags \
     --enable_lto
 
 if [ $? -ne 0 ]; then
