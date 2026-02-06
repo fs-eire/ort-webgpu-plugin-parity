@@ -8,6 +8,13 @@ set -e
 # Get the directory where this script is located
 SCRIPT_DIR="$(cd "$(dirname "$0")" && pwd)"
 
+# Activate Python virtual environment
+source "$SCRIPT_DIR/activate_env.sh"
+if [ $? -ne 0 ]; then
+    echo "Failed to activate virtual environment"
+    exit 1
+fi
+
 cd "$SCRIPT_DIR"
 
 echo "=== Syncing git submodules ==="

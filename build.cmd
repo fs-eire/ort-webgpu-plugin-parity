@@ -3,6 +3,15 @@
 pushd %~dp0
 setlocal
 
+:: Activate Python virtual environment
+call %~dp0activate_env.cmd
+if %errorlevel% neq 0 (
+    echo Failed to activate virtual environment
+    endlocal
+    popd
+    exit /b %errorlevel%
+)
+
 call git submodule sync --recursive
 call git submodule update --init --recursive
 

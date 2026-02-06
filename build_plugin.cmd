@@ -1,6 +1,14 @@
 @echo off
 setlocal
 
+:: Activate Python virtual environment
+call %~dp0activate_env.cmd
+if %errorlevel% neq 0 (
+    echo Failed to activate virtual environment
+    endlocal
+    exit /b %errorlevel%
+)
+
 :: STEP.1 - build onnxruntime
 pushd %~dp0\external\onnxruntime
 call build.bat ^
